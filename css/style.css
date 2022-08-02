@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+
+
+/*----------------HEADER--------------*/
+
+header img {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+header {
+    background-color: #1ebd1e;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header nav ul {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 25px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: chartreuse;
+    background-color: rgb(9, 114, 9);
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    padding: 7px;
+    border-radius: 5px;
+
+}
+
+/* -----Fin Header------- */
+
+
+
+
+
+
+
+/*----------------MAIN INDEX----------------*/
+
+main {
+    width: 100%;
+    height: 85vh;
+    background-image: url("../img/fondogeneralindex.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ----Grilla invisible con aplicaciones de flex-box dentro de cada contenedor--- */
+.grilla_general {
+
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+
+    grid-template-rows: 22vh 20vh 43vh;
+
+    grid-template-areas:
+        "h1h4 . redessoc"
+        ". parraf parraf"
+        "promo promo promo"
+    ;
+}
+
+.titulo {
+    grid-area: h1h4;
+    padding-left: 35px;
+}
+
+.redes {
+    grid-area: redessoc;
+}
+
+.parrafo {
+    grid-area: parraf;
+    display: flex;
+    justify-content: center;
+}
+
+.promos {
+    grid-area: promo;
+}
+
+.titulo h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 5px;
+    color: aliceblue;
+    text-align: left;
+}
+
+.titulo h4 {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Source Serif Pro', serif;
+    color: aliceblue;
+    text-align: left;
+}
+
+.parrafo p {
+    width: 40%;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 5%;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    color: aliceblue;
+    justify-content: left;
+}
+
+.redes {
+    width: fit-content;
+    height: fit-content;
+    background-color: darkcyan;
+    position: fixed;
+    top: 140px;
+    right: 1px;
+}
+
+.promos {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.promos h2 {
+    color: aliceblue;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 900;
+    text-align: left;
+    line-height: 15px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.promos div {
+    width: 170px;
+    height: 350px;
+    margin: 20px;
+    border: 2px outset cyan;
+    text-align: center;
+    background-color: aquamarine;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.promos div a {
+    height: fit-content;
+    text-decoration: none;
+    color: chartreuse;
+    background-color: rgb(9, 114, 9);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.promos div h3 {
+    width: 175px;
+    height: fit-content;
+    color: rgb(9, 114, 9);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 800;
+    line-height: 15px;
+    font-size: 18px;
+    margin-top: 5px;
+
+}
+
+.promos div h4 {
+    width: 140p;
+    height: fit-content;
+    text-align: left;
+    padding: 3px;
+    color: rgb(20, 148, 20);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    line-height: 12px;
+    font-size: 100%;
+    margin-top: 10px;
+}
+
+.promos div img {
+    width: 170px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+/*-----FIN MAIN INDEX-----*/
+
+
+
+
+
+
+/*-------------MAIN NOSOTROS------------*/
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: repeat(4, 21vh);
+    grid-auto-rows: 1fr;
+    gap: 0px 1%;
+    grid-auto-flow: column;
+    justify-content: start;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-areas:
+        "foto titulo1 ."
+        "foto parrafo1 ."
+        ". imagen titulo2"
+        ". . parrafo2";
+    width: 100%;
+    height: 95%;
+}
+
+.titulo1 {
+    justify-self: start;
+    align-self: end;
+    grid-area: titulo1;
+    width: 100%;
+}
+
+.parrafo2 {
+    align-self: stretch;
+    grid-area: parrafo2;
+    width: 75%;
+}
+
+.foto {
+    justify-self: end;
+    align-self: center;
+    grid-area: foto;
+}
+
+.parrafo1 {
+    align-self: stretch;
+    grid-area: parrafo1;
+    width: 100%;
+}
+
+.titulo2 {
+    align-self: end;
+    grid-area: titulo2;
+    width: 75%;
+}
+
+.imagen {
+    justify-self: end;
+    align-self: end;
+    grid-area: imagen;
+    width: 150px;
+    height: 150px;
+}
+
+
+.foto img {
+    width: 220px;
+    height: 330px;
+    border: outset 5px rgb(204, 64, 64);
+
+}
+
+.titulo1 h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: start;
+    color: aliceblue;
+    margin: 3px;
+}
+
+.parrafo1 p {
+    padding: 7px;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: start;
+    color: aliceblue;
+}
+
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    border: outset 5px rgb(204, 64, 64);
+}
+
+.titulo2 h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    color: aliceblue;
+    margin: 3px;
+}
+
+.parrafo2 p {
+    padding: 7px;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lora', serif;
+    text-align: justify;
+    color: aliceblue;
+}
+
+/*----------------FIN MAIN NOSOTROS----------*/
+
+
+
+
+
+/*----------------FOOTER---------------*/
+/* en algún momento se convertirá en un banner*/
+footer {
+    background-color: #1ebd1e;
+    width: 100%;
+    height: 140px;
+}
+
+footer img {
+    margin: 10px;
+    margin-left: 50em;
+    width: auto;
+    height: 70%;
+}
+
+/* el único recurso que encontré para posicionar el h verticalmente fue recurrir a un margin-top negativo  */
+footer h3 {
+    margin-right: 5%;
+    margin-top: -50px;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Source Serif Pro', serif;
+    color: rgb(9, 114, 9);
+    text-align: right;
+}
+/*  -------Fin FOOTER----------- */
+
+
+
+
+/*--------------MEDIA QUERIES---------*/
+/* Header */
+
+@media screen and (max-width:821px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:680px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+}
+
+/* Main - INDEX */
+@media screen and (max-width:1040px) {
+    .redes {
+        position: sticky;
+        left: 0px;
+        bottom: 0px;
+    }
+}
+
+@media screen and (max-width:1615px) {
+    .parrafo p {
+        width: 95%;
+        flex-direction: row;
+        margin-top: 1px;
+
+    }
+
+}
+
+@media screen and (max-width:685px) {
+    .parrafo p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .titulo h4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:855px) {
+    .promos {
+        flex-direction: column;
+    }
+}
+
+
+
+/* -------Main - NOSOTROS */
+
+@media screen and (max-width:1650px) {
+    .nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagen {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .titulo1 h2 {
+        font-size: 26px;
+        color: rgb(56, 56, 110);
+    }
+
+    .titulo2 h2 {
+        font-size: 26px;
+        color: rgb(56, 56, 110);
+    }
+
+    .parrafo1 p {
+        font-size: 18px;
+        color: rgb(56, 56, 110);
+    }
+
+    .parrafo2 p {
+        font-size: 18px;
+        color: rgb(56, 56, 110);
+    }
+}
+
+
+
+
+/* No he resuelto bien el footer, en función de que todavía no tengo claro como será el carrusel */
+
+/* --------FOOTER------- */
+@media screen and (max-width:1390px) {
+    footer h3 {
+        text-align: start;
+    }
+}
+
+    @media screen and (max-width:1040px) {
+        footer {
+            height: auto;
+        }
+        footer img {
+            display: none;
+        }
+            footer h3 {
+        font-size: 15px;
+                }
+}
+@media screen and (max-width:854px) {
+    footer h3 {
+        text-align: right;
+    }
+}
+@media screen and (max-width:380px) {
+    footer h3 {
+        display: none;
+    }
+}
+
+
+/* -------- GRADIENTES Y ANIMACIONES------- */
+
+/*.promos div a:hover{
+    transform: scale(1.2);
+}   */
+/* No pude lograr que se escalara el botón "Detalles" */
+.promos div {
+    transition: 1s;
+}
+.promos div:hover{
+    transform: scale(0.9);
+   }
