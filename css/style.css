@@ -522,3 +522,24 @@ footer h3 {
 .promos div:hover{
     transform: scale(0.9);
    }
+
+   header{
+    background: rgb(20,99,31);
+background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
+   }
+   footer{
+    background: rgb(20,99,31);
+background: linear-gradient(180deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
+   }
+   .imagen img{
+    transition:1.5s;
+   }
+   .imagen img:hover {
+    transform: rotateY(45deg);
+   }
+
+   .foto img{transition: 1.7s
+}
+    .foto img:hover{
+        transform:rotateY(45deg);
+    }
