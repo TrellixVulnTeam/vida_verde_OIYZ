@@ -333,13 +333,9 @@ main {
 /*------- FIN MAIN CONTACTO------ */
 
 
-/*----------------FOOTER---------------*/
-/* en algún momento se convertirá en un banner*/
 
-
-/* el único recurso que encontré para posicionar el h verticalmente fue recurrir a un margin-top negativo  */
-
-/*  -------Fin FOOTER----------- */
+/* --------FOOTER------------ */
+/* Tuve un problema al escalar las imagenes del banner para el carousel, o quedaban gigantes con w-100 o muy chicas con cualquier otro tamaño menor. No pude encontrar el motivo. Tambien me hubiese gustado centrarlas, pero no tengo idea de cómo ni si se puede */
 
 
 
@@ -435,20 +431,10 @@ main {
 
 
 
-/* No he resuelto bien el footer, en función de que todavía no tengo claro como será el carrusel */
-
-/* --------FOOTER------- */
-footer {
-    background: rgb(20,99,31);
-background: linear-gradient(180deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
-}
-
 
 /* -------- GRADIENTES Y ANIMACIONES------- */
 
-/*.promos div a:hover{
-    transform: scale(1.2);
-}   */
+
 /* No pude lograr que se escalara el botón "Detalles" */
 .promos div {
     transition: 1s;
@@ -474,3 +460,9 @@ background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgb
     .foto img:hover{
         transform:rotateY(45deg);
     }
+
+    /* --------FOOTER------- */
+footer {
+    background: rgb(20,99,31);
+background: linear-gradient(180deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
+}
