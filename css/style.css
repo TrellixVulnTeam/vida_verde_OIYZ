@@ -10,48 +10,18 @@
 
 
 /*----------------HEADER--------------*/
-
 header img {
-    margin: 20px;
     width: 100px;
     height: 100px;
 }
-
-header {
-    background-color: #1ebd1e;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header nav{
+    background: rgb(20,99,31);
+background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
 }
 
 
-header nav ul {
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-}
-
-header nav ul li {
-    list-style: none;
-    margin: 25px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: chartreuse;
-    background-color: rgb(9, 114, 9);
-    text-align: center;
-    font-family: 'Prompt', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    font-style: normal;
-    padding: 7px;
-    border-radius: 5px;
-
+.collapse {
+    flex-direction: row-reverse;
 }
 
 /* -----Fin Header------- */
@@ -353,35 +323,22 @@ main {
 /*----------------FIN MAIN NOSOTROS----------*/
 
 
+/* -------------MAIN CONTACTO-------- */
+.icono_mail {
+    width: 200px;
+    height: 200px;
+}
 
+
+/*------- FIN MAIN CONTACTO------ */
 
 
 /*----------------FOOTER---------------*/
 /* en algún momento se convertirá en un banner*/
-footer {
-    background-color: #1ebd1e;
-    width: 100%;
-    height: 140px;
-}
 
-footer img {
-    margin: 10px;
-    margin-left: 50em;
-    width: auto;
-    height: 70%;
-}
 
 /* el único recurso que encontré para posicionar el h verticalmente fue recurrir a un margin-top negativo  */
-footer h3 {
-    margin-right: 5%;
-    margin-top: -50px;
-    font-size: 30px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Source Serif Pro', serif;
-    color: rgb(9, 114, 9);
-    text-align: right;
-}
+
 /*  -------Fin FOOTER----------- */
 
 
@@ -481,32 +438,9 @@ footer h3 {
 /* No he resuelto bien el footer, en función de que todavía no tengo claro como será el carrusel */
 
 /* --------FOOTER------- */
-@media screen and (max-width:1390px) {
-    footer h3 {
-        text-align: start;
-    }
-}
-
-    @media screen and (max-width:1040px) {
-        footer {
-            height: auto;
-        }
-        footer img {
-            display: none;
-        }
-            footer h3 {
-        font-size: 15px;
-                }
-}
-@media screen and (max-width:854px) {
-    footer h3 {
-        text-align: right;
-    }
-}
-@media screen and (max-width:380px) {
-    footer h3 {
-        display: none;
-    }
+footer {
+    background: rgb(20,99,31);
+background: linear-gradient(180deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
 }
 
 
@@ -527,10 +461,7 @@ footer h3 {
     background: rgb(20,99,31);
 background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
    }
-   footer{
-    background: rgb(20,99,31);
-background: linear-gradient(180deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
-   }
+
    .imagen img{
     transition:1.5s;
    }
