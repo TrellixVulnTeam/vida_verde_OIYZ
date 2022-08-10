@@ -12,7 +12,7 @@
 /*----------------HEADER--------------*/
 header img {
     width: 100px;
-    height: 100px;
+    height: 100px; 
 }
 header nav{
     background: rgb(20,99,31);
@@ -36,7 +36,7 @@ background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgb
 
 main {
     width: 100%;
-    height: 85vh;
+    
     background-image: url("../img/fondogeneralindex.jpg");
     background-position: center;
     background-size: cover;
@@ -51,7 +51,7 @@ main {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
 
-    grid-template-rows: 22% 20% 43%;
+    grid-template-rows: 20% 20% 60%;
 
     grid-template-areas:
         "h1h4 . redessoc"
@@ -99,7 +99,7 @@ main {
 }
 
 .parrafo p {
-    width: 40%;
+
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -118,9 +118,7 @@ main {
     width: fit-content;
     height: fit-content;
     background-color: darkcyan;
-    position: fixed;
-    top: 140px;
-    right: 1px;
+    justify-self: end;
 }
 
 .promos {
@@ -176,15 +174,15 @@ main {
 }
 
 .promos div h4 {
-    width: 140p;
+    width: 130px;
     height: fit-content;
-    text-align: left;
+    text-align: center;
     padding: 3px;
     color: rgb(20, 148, 20);
     font-family: 'Source Serif Pro', serif;
     font-weight: 600;
     line-height: 12px;
-    font-size: 100%;
+    font-size: 16px;
     margin-top: 10px;
 }
 
@@ -210,7 +208,7 @@ main {
 .nosotros {
     display: grid;
     grid-template-columns: 20% 30% 50%;
-    grid-template-rows: repeat(4, 30%);
+    grid-template-rows: repeat(3, 33%);
     grid-auto-rows: 1fr;
     gap: 0px 1%;
     grid-auto-flow: column;
@@ -221,9 +219,9 @@ main {
         "foto titulo1 ."
         "foto parrafo1 ."
         ". imagen titulo2"
-        ". . parrafo2";
+        ". . .";
     width: 100%;
-    height: 95%;
+    padding-top: 5px;
 }
 
 .titulo1 {
@@ -237,12 +235,14 @@ main {
     align-self: stretch;
     grid-area: parrafo2;
     width: 75%;
+    height: 50%;
 }
 
 .foto {
     justify-self: end;
     align-self: center;
     grid-area: foto;
+    margin-top: 100px;
 }
 
 .parrafo1 {
@@ -259,7 +259,8 @@ main {
 
 .imagen {
     justify-self: end;
-    align-self: end;
+    align-self:flex-start;
+    margin-top: 30px;
     grid-area: imagen;
     width: 150px;
     height: 150px;
@@ -285,7 +286,7 @@ main {
 
 .parrafo1 p {
     padding: 7px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
     font-family: 'Lora', serif;
@@ -310,14 +311,15 @@ main {
     margin: 3px;
 }
 
-.parrafo2 p {
-    padding: 7px;
-    font-size: 26px;
+.titulo2 p{
+    padding: 7px 7px 50px 7px;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
     font-family: 'Lora', serif;
     text-align: justify;
     color: aliceblue;
+
 }
 
 /*----------------FIN MAIN NOSOTROS----------*/
@@ -365,15 +367,34 @@ main {
     }
 }
 
-@media screen and (max-width:1615px) {
-    .parrafo p {
-        width: 95%;
+
+
+@media screen and (max-width:855px) {
+    
+    .parrafo{
+        grid-column: span 3;
+        margin-inline: 20px;
+    }
+    .promos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promos div {
+        display: flex;
         flex-direction: row;
-        margin-top: 1px;
+        justify-content: space-evenly;
+        align-items: center;
+        width: min-content;
+        height: 350px;
 
     }
 
+    .promos div a {
+        margin-inline: 5px;
+    }
 }
+
 
 @media screen and (max-width:685px) {
     .parrafo p {
@@ -386,16 +407,63 @@ main {
     }
 }
 
-@media screen and (max-width:855px) {
+@media screen and (max-width:600px) {
+    .redes div a img {
+        width: 30%;
+        height: 30%;
+    }
+
+
+}
+
+@media screen and (max-width:560px) {
     .promos {
         flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .promos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: min-content;
+        height: auto;
+
+    }
+
+    .promos div a{
+        margin-inline: 5px;
+    }         
+    
+    .promos div img {
+        width: 40%;
+        height: 40%;
+        margin-bottom: 5px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+}
+@media screen and (max-width:440px) {
+    .grilla_general{
+    grid-template-rows: 13% 15% 72%;
+
+    grid-template-areas:
+        "h1h4 . redessoc"
+        "parraf parraf parraf"
+        "promo promo promo";
+}
+    .parrafo p {
+        margin-bottom: 5px;
+    }
+    .promos h2{
+        margin-top: 10px;
     }
 }
 
 
-
 /* -------Main - NOSOTROS */
-
 @media screen and (max-width:1650px) {
     .nosotros {
         display: flex;
@@ -409,27 +477,25 @@ main {
 
     .titulo1 h2 {
         font-size: 26px;
-        color: rgb(56, 56, 110);
+        justify-self: center;
+        margin-left: 30px;
     }
 
     .titulo2 h2 {
         font-size: 26px;
-        color: rgb(56, 56, 110);
+        margin-left: 30px;
     }
 
     .parrafo1 p {
         font-size: 18px;
-        color: rgb(56, 56, 110);
+        margin: 30px;
     }
 
     .parrafo2 p {
         font-size: 18px;
-        color: rgb(56, 56, 110);
+        margin: 30px;
     }
 }
-
-
-
 
 
 /* -------- GRADIENTES Y ANIMACIONES------- */
