@@ -231,13 +231,6 @@ main {
     width: 100%;
 }
 
-.parrafo2 {
-    align-self: stretch;
-    grid-area: parrafo2;
-    width: 75%;
-    height: 50%;
-}
-
 .foto {
     justify-self: end;
     align-self: center;
@@ -464,7 +457,7 @@ main {
 
 
 /* -------Main - NOSOTROS */
-@media screen and (max-width:1650px) {
+@media (max-width:1650px) and (min-width:300px) {
     .nosotros {
         display: flex;
         flex-direction: column;
@@ -497,6 +490,21 @@ main {
     }
 }
 
+/* -----------PSEUDOELEMENTOS---------- */
+
+.parrafo1 P::first-letter{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.titulo2 p::first-letter{
+    font-size: 50px;
+    font-weight: 800;
+}
+/* -------------CONTACTO---------------- */
+@media (max-width: 1000px) and (min-width: 350px){
+
+}
 
 /* -------- GRADIENTES Y ANIMACIONES------- */
 
