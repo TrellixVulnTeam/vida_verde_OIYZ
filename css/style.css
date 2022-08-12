@@ -1,542 +1,148 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
-
-
-
-
-/*----------------HEADER--------------*/
-header img {
-    width: 100px;
-    height: 100px; 
-}
-header nav{
-    background: rgb(20,99,31);
-background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
-}
-
-
-.collapse {
-    flex-direction: row-reverse;
-}
-
-/* -----Fin Header------- */
-
-
-
-
-
-
-
-/*----------------MAIN INDEX----------------*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 main {
-    width: 100%;
-    
-    background-image: url("../img/fondogeneralindex.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+  width: 100%;
+  background-image: url("../img/fondogeneralindex.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
 
-/* ----Grilla invisible con aplicaciones de flex-box dentro de cada contenedor--- */
-.grilla_general {
-
-    color: aliceblue;
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-
-    grid-template-rows: 20% 20% 60%;
-
-    grid-template-areas:
-        "h1h4 . redessoc"
-        ". parraf parraf"
-        "promo promo promo"
-    ;
-}
-
-.titulo {
-    grid-area: h1h4;
-    padding-left: 35px;
-}
-
-.redes {
-    grid-area: redessoc;
-}
-
-.parrafo {
-    grid-area: parraf;
-    display: flex;
-    justify-content: center;
-}
-
-.promos {
-    grid-area: promo;
-}
-
-.titulo h1 {
-    font-size: 50px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Source Serif Pro', serif;
-    letter-spacing: 5px;
-    color: aliceblue;
-    text-align: left;
-}
-
-.titulo h4 {
-    font-size: 30px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Source Serif Pro', serif;
-    color: aliceblue;
-    text-align: left;
-}
-
-.parrafo p {
-
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-right: 5%;
-    font-size: 26px;
-    font-weight: 400;
-    font-style: italic;
-    font-family: 'Lora', serif;
-    text-align: justify;
-    color: aliceblue;
-    justify-content: left;
-}
-
-.redes {
-    width: fit-content;
-    height: fit-content;
-    background-color: darkcyan;
-    justify-self: end;
-}
-
-.promos {
-    display: flex;
-    justify-content: flex-start;
-
-}
-
-.promos h2 {
-    color: aliceblue;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 900;
-    text-align: left;
-    line-height: 15px;
-    font-size: 30px;
-    margin-bottom: 20px;
-    margin-left: 40px;
-}
-
-.promos div {
-    width: 170px;
-    height: 350px;
-    margin: 20px;
-    border: 2px outset cyan;
-    text-align: center;
-    background-color: aquamarine;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.promos div a {
-    height: fit-content;
-    text-decoration: none;
-    color: chartreuse;
-    background-color: rgb(9, 114, 9);
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-size: 15px;
-    padding: 3px;
-}
-
-.promos div h3 {
-    width: 175px;
-    height: fit-content;
-    color: rgb(9, 114, 9);
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 800;
-    line-height: 15px;
-    font-size: 18px;
-    margin-top: 5px;
-
-}
-
-.promos div h4 {
-    width: 130px;
-    height: fit-content;
-    text-align: center;
-    padding: 3px;
-    color: rgb(20, 148, 20);
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 600;
-    line-height: 12px;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.promos div img {
-    width: 170px;
-    height: 200px;
-    margin-bottom: 10px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-
-
-/*-----FIN MAIN INDEX-----*/
-
-
-
-
-
-
-/*-------------MAIN NOSOTROS------------*/
+/* Complementos de Bootsrap*/
+header {
+  /* clase acomodada para este proyecto*/ }
+  header img {
+    width: 100px;
+    height: 100px; }
+  header nav {
+    background: #14631f;
+    background: linear-gradient(0deg, #14631f 0%, #187909 13%, #00ff62 71%); }
+  header .collapse {
+    flex-direction: row-reverse; }
 
 .nosotros {
-    display: grid;
-    grid-template-columns: 20% 30% 50%;
-    grid-template-rows: repeat(3, 33%);
-    grid-auto-rows: 1fr;
-    gap: 0px 1%;
-    grid-auto-flow: column;
-    justify-content: start;
-    justify-items: stretch;
-    align-items: center;
-    grid-template-areas:
-        "foto titulo1 ."
-        "foto parrafo1 ."
-        ". imagen titulo2"
-        ". . .";
-    width: 100%;
-    padding-top: 5px;
-}
-
-.titulo1 {
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  grid-template-rows: repeat(4, 25%);
+  grid-auto-rows: 1fr;
+  gap: 0px 1%;
+  grid-auto-flow: column;
+  justify-content: start;
+  justify-items: stretch;
+  align-items: center;
+  grid-template-areas: "foto titulo1 ." "foto parrafo1 ." ". imagen titulo2" ". . parrafo2";
+  width: 100%;
+  padding-top: 50px; }
+  .nosotros .foto {
+    justify-self: end;
+    align-self: center;
+    grid-area: foto; }
+    .nosotros .foto .foto img {
+      width: 220px;
+      height: 330px;
+      border: outset 5px #cc4040;
+      transition: 1.7s; }
+      .nosotros .foto .foto img:hover {
+        transform: rotateY(45deg); }
+  .nosotros .titulo1 {
     justify-self: start;
     align-self: end;
     grid-area: titulo1;
-    width: 100%;
-}
-
-.foto {
-    justify-self: end;
-    align-self: center;
-    grid-area: foto;
-    margin-top: 100px;
-}
-
-.parrafo1 {
+    width: 100%; }
+    .nosotros .titulo1 .titulo1 h2 {
+      font-size: 32px;
+      font-weight: 600;
+      font-style: normal;
+      font-family: 'Lora', serif;
+      text-align: start;
+      color: aliceblue;
+      margin: 3px; }
+  .nosotros .parrafo1 {
     align-self: stretch;
     grid-area: parrafo1;
-    width: 100%;
-}
-
-.titulo2 {
-    align-self: end;
-    grid-area: titulo2;
-    width: 75%;
-}
-
-.imagen {
+    width: 100%; }
+    .nosotros .parrafo1 .parrafo1 p {
+      padding: 7px;
+      font-size: 20px;
+      font-weight: 400;
+      font-style: normal;
+      font-family: 'Lora', serif;
+      text-align: start;
+      color: aliceblue; }
+      .nosotros .parrafo1 .parrafo1 p::first-letter {
+        font-size: 50px;
+        font-weight: 800; }
+  .nosotros .imagen {
     justify-self: end;
-    align-self:flex-start;
-    margin-top: 30px;
+    align-self: end;
     grid-area: imagen;
     width: 150px;
-    height: 150px;
-}
+    height: 150px; }
+    .nosotros .imagen .imagen img {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+      border: outset 5px #cc4040;
+      transition: 1.5s; }
+      .nosotros .imagen .imagen img:hover {
+        transform: rotateY(45deg); }
+  .nosotros .titulo2 {
+    align-self: end;
+    grid-area: titulo2;
+    width: 75%; }
+    .nosotros .titulo2 .titulo2 h2 {
+      font-size: 32px;
+      font-weight: 600;
+      font-style: normal;
+      font-family: 'Lora', serif;
+      text-align: start;
+      color: aliceblue;
+      margin: 3px; }
+    .nosotros .titulo2 .parrafo2 p {
+      padding: 7px 7px 50px 7px;
+      font-size: 20px;
+      font-weight: 400;
+      font-style: normal;
+      font-family: 'Lora', serif;
+      text-align: justify;
+      color: aliceblue; }
+      .nosotros .titulo2 .parrafo2 p::first-letter {
+        font-size: 50px;
+        font-weight: 800; }
 
+/* El Footer es un carousel de Bootsrap, de modo que consta en el archivo de la página .html */
+/* HEADER */
+@media screen and (max-width: 821px) {
+  header {
+    flex-direction: column; } }
 
-.foto img {
-    width: 220px;
-    height: 330px;
-    border: outset 5px rgb(204, 64, 64);
+@media screen and (max-width: 680px) {
+  header nav ul {
+    flex-direction: column; } }
 
-}
-
-.titulo1 h2 {
-    font-size: 32px;
-    font-weight: 600;
-    font-style: normal;
-    font-family: 'Lora', serif;
-    text-align: start;
-    color: aliceblue;
-    margin: 3px;
-}
-
-.parrafo1 p {
-    padding: 7px;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Lora', serif;
-    text-align: start;
-    color: aliceblue;
-}
-
-
-.imagen img {
-    width: 100%;
-    height: 100%;
-    border: outset 5px rgb(204, 64, 64);
-}
-
-.titulo2 h2 {
-    font-size: 32px;
-    font-weight: 600;
-    font-style: normal;
-    font-family: 'Lora', serif;
-    text-align: justify;
-    color: aliceblue;
-    margin: 3px;
-}
-
-.titulo2 p{
-    padding: 7px 7px 50px 7px;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Lora', serif;
-    text-align: justify;
-    color: aliceblue;
-
-}
-
-/*----------------FIN MAIN NOSOTROS----------*/
-
-
-/* -------------MAIN CONTACTO-------- */
-.icono_mail {
-    width: 200px;
-    height: 200px;
-}
-
-
-/*------- FIN MAIN CONTACTO------ */
-
-
-
-/* --------FOOTER------------ */
-/* Tuve un problema al escalar las imagenes del banner para el carousel, o quedaban gigantes con w-100 o muy chicas con cualquier otro tamaño menor. No pude encontrar el motivo. Tambien me hubiese gustado centrarlas, pero no tengo idea de cómo ni si se puede */
-
-
-
-
-/*--------------MEDIA QUERIES---------*/
-/* Header */
-
-@media screen and (max-width:821px) {
-    header {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width:680px) {
-    header nav ul {
-        flex-direction: column;
-    }
-
-}
-
-/* Main - INDEX */
-@media screen and (max-width:1040px) {
-    .redes {
-        position: sticky;
-        left: 0px;
-        bottom: 0px;
-    }
-}
-
-
-
-@media screen and (max-width:855px) {
-    
-    .parrafo{
-        grid-column: span 3;
-        margin-inline: 20px;
-    }
-    .promos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .promos div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        width: min-content;
-        height: 350px;
-
-    }
-
-    .promos div a {
-        margin-inline: 5px;
-    }
-}
-
-
-@media screen and (max-width:685px) {
-    .parrafo p {
-        font-size: 18px;
-        font-weight: 300;
-    }
-
-    .titulo h4 {
-        display: none;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .redes div a img {
-        width: 30%;
-        height: 30%;
-    }
-
-
-}
-
-@media screen and (max-width:560px) {
-    .promos {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .promos div {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        width: min-content;
-        height: auto;
-
-    }
-
-    .promos div a{
-        margin-inline: 5px;
-    }         
-    
-    .promos div img {
-        width: 40%;
-        height: 40%;
-        margin-bottom: 5px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-}
-@media screen and (max-width:440px) {
-    .grilla_general{
-    grid-template-rows: 13% 15% 72%;
-
-    grid-template-areas:
-        "h1h4 . redessoc"
-        "parraf parraf parraf"
-        "promo promo promo";
-}
-    .parrafo p {
-        margin-bottom: 5px;
-    }
-    .promos h2{
-        margin-top: 10px;
-    }
-}
-
-
-/* -------Main - NOSOTROS */
-@media (max-width:1650px) and (min-width:300px) {
-    .nosotros {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .imagen {
-        justify-self: center;
-        align-self: center;
-    }
-
-    .titulo1 h2 {
-        font-size: 26px;
-        justify-self: center;
-        margin-left: 30px;
-    }
-
-    .titulo2 h2 {
-        font-size: 26px;
-        margin-left: 30px;
-    }
-
-    .parrafo1 p {
-        font-size: 18px;
-        margin: 30px;
-    }
-
-    .parrafo2 p {
-        font-size: 18px;
-        margin: 30px;
-    }
-}
-
-/* -----------PSEUDOELEMENTOS---------- */
-
-.parrafo1 P::first-letter{
-    font-size: 50px;
-    font-weight: 800;
-}
-
-.titulo2 p::first-letter{
-    font-size: 50px;
-    font-weight: 800;
-}
-/* -------------CONTACTO---------------- */
-@media (max-width: 1000px) and (min-width: 350px){
-
-}
-
-/* -------- GRADIENTES Y ANIMACIONES------- */
-
-
-/* No pude lograr que se escalara el botón "Detalles" */
-.promos div {
-    transition: 1s;
-}
-.promos div:hover{
-    transform: scale(0.9);
-   }
-
-   header{
-    background: rgb(20,99,31);
-background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
-   }
-
-   .imagen img{
-    transition:1.5s;
-   }
-   .imagen img:hover {
-    transform: rotateY(45deg);
-   }
-
-   .foto img{transition: 1.7s
-}
-    .foto img:hover{
-        transform:rotateY(45deg);
-    }
-
-    /* --------FOOTER------- */
-footer {
-    background: rgb(20,99,31);
-background: linear-gradient(180deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
-}
+/*   Main NOSOTROS   */
+@media (max-width: 1650px) and (min-width: 300px) {
+  .nosotros {
+    display: flex;
+    flex-direction: column; }
+  .imagen {
+    justify-self: center;
+    align-self: center; }
+  .titulo1 h2 {
+    font-size: 26px;
+    justify-self: center;
+    margin-left: 30px; }
+  .titulo2 h2 {
+    font-size: 26px;
+    margin-left: 30px; }
+  .parrafo1 p {
+    font-size: 18px;
+    margin: 30px; }
+  .parrafo2 p {
+    font-size: 18px;
+    margin: 30px; } }

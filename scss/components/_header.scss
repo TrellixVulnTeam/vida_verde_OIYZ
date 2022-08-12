@@ -1,0 +1,16 @@
+/* Complementos de Bootsrap*/ 
+header {
+    img {
+        width: 100px;
+        height: 100px; 
+    }
+    nav {
+        background: rgb(20,99,31);
+        background: linear-gradient(0deg, rgba(20,99,31,1) 0%, rgba(24,121,9,1) 13%, rgba(0,255,98,1) 71%);
+    }
+
+    /* clase acomodada para este proyecto*/
+    .collapse {
+        flex-direction: row-reverse;
+    }
+}
